@@ -1,0 +1,2 @@
+# bujorul
+Static page 
