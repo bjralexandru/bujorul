@@ -40,11 +40,11 @@
         height: 100vh;
     }
 
-    .profile-gif {
-        margin-top: 0;
-        padding: 0;
-        width: 15rem;
-        border-radius: 80%;
+    .section1 .profile-gif {
+        margin: 20px;
+        padding: 20px;
+        border-radius: 60%;
+        width: 350px;
     }
 
 
