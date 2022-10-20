@@ -2,11 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Primary Meta Tags -->
-    <title>BJR</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandru Bujor</title>
     <meta name="title" content="Alexandru Bujor" />
     <meta name="description" content="Personal portfolio website" />
 
@@ -21,54 +20,53 @@
 
     <script src="https://kit.fontawesome.com/5d08d787dd.js" crossorigin="anonymous"></script>
     <!-- Change with your own credentials. -->
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./utilities.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
-    <header id="hero">
-        <!-- Navbar -->
-        <nav class="navbar">
-            <div class="container">
-                <!-- Logo -->
-                <h1 id="logo">
-                    <a href="#" class="glitch" data-glitch="BUJ0R">BUJ0R</a>
-                </h1>
-                <!-- Navbar links -->
-                <ul class="nav-menu">
-                    <li><a class="nav-link btn btn-normal" href="#home">CONTACT</a></li>
-                    <li><a class="nav-link btn btn-normal" href="#projects">PROJECTS</a></li>
-                    <li>
-                        <a class="nav-link btn btn-primary" href="#resume">RESUME
-                            <i class="fa fa-user-circle" aria-hidden="true"></i></a>
-                    </li>
+    <!-- NAVIGATION BAR -->
 
-                    <!-- Hamburger menu -->
-                </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
+    <nav class="navbar">
+        <div class="container">
+            <!-- Logo -->
+            <p id="logo">
+                <a href="#" class="glitch" data-glitch="BUJ0R">BUJ0R</a>
+            </p>
+            <!-- Navbar links -->
+            <ul class="nav-menu">
+                <li><a class="nav-link btn btn-normal" href="#footer">CONTACT</a></li>
+                <li><a class="nav-link btn btn-normal" href="#projects">PROJECTS</a></li>
+                <li>
+                    <a class="nav-link btn btn-primary" href="#resume">RESUME
+                        <i class="fa fa-user-circle" aria-hidden="true"></i></a>
+                </li>
+
+                <!-- Hamburger menu -->
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <section id="home" class="header-container">
-
-        <div class="content-text">
+    <!-- WELCOME PAGE -->
+    <section class="section1">
+        <div class="body-text">
             <h1>Hi I'm Alexandru</h1>
             <h2>Chemist & Developer</h2>
             <p>
                 A passionate technologist, aproaching practical problems with curiosity and a "can-do" attitude.
             </p>
-            <a href="#" class="btn btn-secondary" target="_blank"><b>Connect
-                    With Me</b></a>
+            <a href="#" class="btn btn-secondary" target="_blank"><b>Learn More</b></a>
         </div>
 
         <video class="profile-gif" src="assets/profile.mp4" alt="" autoplay loop />
     </section>
 
+
+    <!-- PROJECTS PAGE  -->
     <!-- Projects -->
     <section id="projects" class="project-container container">
         <h2>Projects portfolio</h2>
@@ -169,24 +167,26 @@
 
     </section>
 
+    <!-- RESUME -->
     <section id="resume">
         <div class="content-text">
-            <header>Resume</header>
+            <h1>Resume</h1>
 
-            <h2>Thank you for showing interest in my work.</h2>
-            <h2>Please get a copy of my resume in your prefered format.</h2>
+            <h2>Thank you for showing interest in my work. Please get a copy of my resume in your prefered format.</p>
         </div>
+
         <div class="download">
-            <i class="fa-solid fa-file-word"></i>
-            <i class="fa-solid fa-file-pdf"></i>
+            <a href="#"><i class="fa-solid fa-file-word"></i></a>
+            <a href="#"><i class="fa-solid fa-file-pdf"></i></a>
         </div>
 
 
-        <h3>Let's keep in touch on any of my socials listed down below.</p>
+        <p>Let's keep in touch on any of my socials listed down below.</p>
 
 
     </section>
 
+    <!-- FOOTER -->
 
     <footer id="footer">
         <div class="container">
@@ -201,6 +201,7 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="main.js"></script>
+
 </body>
 
 </html>

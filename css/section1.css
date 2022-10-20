@@ -1,0 +1,53 @@
+/* SECTION 1 */
+
+.section1 {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0.2em 0 0 0;
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+.section1>div {
+    margin-top: 1rem;
+}
+
+.body-text {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 5vh;
+}
+
+
+.body-text h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    transition: 0.2s ease-in-out;
+    margin-top: 2.5em;
+    margin-bottom: 0.2em;
+}
+
+.body-text h2 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    transition: 0.2s ease-in-out;
+    margin-bottom: 1em;
+    text-shadow: 0 0 20px var(--secondary-color);
+
+}
+
+.body-text p {
+    padding: 0.5rem;
+    max-width: 700px;
+    text-transform: --weight-bold;
+    font-size: 1rem;
+    margin-bottom: 2em;
+}
+
+.section1 .profile-gif {
+    margin-top: 0.5em;
+    width: 450px;
+}
