@@ -1,16 +1,14 @@
 .glitch {
-    font-size: 1.125em;
-    font-family: 'Roboto Mono', monospace;
+    font-size: 2em;
+    /* font-family: 'Roboto Mono', monospace; */
     font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
-    position: absolute;
-    top: 50%;
-    left: 12%;
     transform: translate(-50%, -50%);
     margin: 0;
-    color: #fff;
+    color: rgb(0, 0, 0);
     letter-spacing: 5px;
+    z-index: 20;
 }
 
 .glitch:before,
