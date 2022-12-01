@@ -78,8 +78,13 @@
     <script src="https://kit.fontawesome.com/5d08d787dd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="glitch.css" />
+    <link rel="stylesheet" href="preloader.css" />
   </head>
   <body>
+    <div class="zero-container" id="zero-container">
+    <h2 class="zero glitch layers" data-text="BUJ0R"><span>BUJ0R</span></h2>
+    <div class="circle-gif"></div>
+    </div>
     <header id="hero">
       <nav class="navbar">
         <div class="container">
@@ -135,18 +140,18 @@
                
                 <h1>root@ubuntu:~ whoami</h1>
                 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim cupiditate, quas non ab illum quis at.
-                    Aut,
-                    commodi. Accusamus sed ad totam officia, numquam nobis, mollitia ipsum earum pariatur molestias
-                    explicabo molestiae, veritatis aut nam quas. Exercitationem odit quibusdam quos.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat molestiae provident similique culpa
-                    quod voluptates officiis in voluptatum sint mollitia.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, vero.</p>
+                <p>I’m Alex and my passion for chemistry only became questionable after two years in 
+                  which I’ve spent most of my afternoons learning and working with Python, SQL and Linux.</p>
+                <p>Lately, I discovered the Golang programming language and I’m having lots of fun 
+                  coding with it. Also, my “talent” with clay modeling while not yet suited for the 
+                  gig economy it's my new hobby and it brings me mental clarity.</p>
+                <p>​On this webpage, you’ll find my code-related projects and scientific tools/guides 
+                  covering electrochemical subjects/experiments.</p>
                 <ul class="job-skills">
                     <li><i class="fa-brands fa-golang skills-icon"></i> Golang</li>
                     <li><i class="fa-brands fa-python skills-icon"></i> Python</li>
                     <li><i class="fa-brands fa-git-alt skills-icon"></i> Git</li>
-                    <li><i class="fa-brands fa-docker skills-icon"></i> Docker</li>
+                    <li><i class="fa-solid fa-database skills-icon"></i> SQL</li>
                 </ul>
             </div>
             <div class="my-image">
@@ -170,15 +175,16 @@
                     </div>
                 </div>
                 <div class="project-description">
-                    <h2>Project title</h2>
-                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est nemo suscipit eos soluta
-                        consequatur beatae maxime vero ipsam, corrupti recusandae odio, magnam ratione quis ut aliquam
-                        non quam deserunt eaque!</span>
+                    <h2>SECM Fitter</h2>
+                    <span>A one-stop application for all your Scanning electrochemical microscopy (SECM)
+                      experiments. For now, only the approach curve fitting functionality was implemented.
+                      Further versions will support 3D current maps image analysis.
+                    </span>
                     <ul class="tech-stack">
-                        <li><i class="fa-brands fa-golang"></i> Golang</li>
                         <li><i class="fa-brands fa-python"></i> Python</li>
-                        <li><i class="fa-brands fa-git-alt"></i> Git</li>
-                        <li><i class="fa-brands fa-docker"></i> Docker</li>
+                        <li><i class="fa-solid fa-pepper-hot"></i> Flask</li>
+                        <li><i class="fa-solid fa-chart-line"></i> Chart.js</li>
+                        <li><i class="fa-solid fa-flask"></i> SQLAlchemy</li>
                     </ul>
                 </div>
             </div>
@@ -258,5 +264,12 @@
 
 
     <script src="main.js"></script>
+    <script> 
+       var loader = document.getElementById("zero-container")
+       
+       window.addEventListener("load", function(){
+        loader.style.display = "none";
+       })
+    </script>
   </body>
 </html>

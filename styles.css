@@ -391,9 +391,7 @@ h1#logo {
 }
 
 .project-image {
-    background-image: url(/assets/project_dummy.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: url(/assets/SECM.png);
     opacity: 0.5;
     width: 60rem;
     height: 25rem;
@@ -411,6 +409,7 @@ h1#logo {
     margin-top: 12rem;
     margin-left: 4.5rem;
     width: 50rem;
+    color: black;
     opacity: 0;
 }
 
@@ -465,7 +464,7 @@ h1#logo {
 
 }
 
-.project-description p {
+.project-description span {
     font-family: var(--font-family-secondary);
     font-size: 1rem;
     font-weight: 600;
