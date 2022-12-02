@@ -772,7 +772,7 @@ footer .footer-social .fa-brands:hover {
 }
 
 .project-image {
-  background-image: url(/assets/project_dummy.png);
+  background-image: url(/assets/SECM_sqr.png);
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0.5;
@@ -989,7 +989,7 @@ footer .footer-social .fa-brands:hover {
     height: 550px;
     align-items: center;
     background-size:contain;
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
     margin-top: 3rem;
     border-radius: 5%;
   }
