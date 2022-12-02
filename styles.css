@@ -1095,6 +1095,7 @@ footer .footer-social .fa-brands:hover {
       justify-items: flex-start;
     }
   .my-image .profile {
+    margin-top: 2rem;
     object-fit: fill;
     width: 15rem;
     height: 15rem;
