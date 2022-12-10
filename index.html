@@ -9,39 +9,39 @@
     <meta name="title" content="Alexandru Bujor" />
     <meta
       name="description"
-      content="A collection of projects which follows my learning path on subjects that cover: software engineering, electrochemistry and clay modelling."
+      content="My name is Alex Bujor and this is my personal webpage."
     />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content="https://github.com/bjralexandru"
+      content="https://bujorul.com"
     />
-    <meta property="og:title" content="Alexandru bujor" />
+    <meta property="og:title" content="Alexandru Bujor" />
     <meta
       property="og:description"
-      content="A collection of projects which follows my learning path on subjects that cover: software engineering, electrochemistry and clay modelling"
+      content="My name is Alex Bujor and this is my personal webpage."
     />
     <meta
       property="og:image"
-      content="https://avatars.githubusercontent.com/u/44103446?v=4"
+      content="assets/landing_page.png"
     />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta
       property="twitter:url"
-      content="https://github.com/bjralexandru"
+      content="https://bujorul.com"
     />
     <meta property="twitter:title" content="Alexandru Bujor" />
     <meta
       property="twitter:description"
-      content="A collection of projects which follows my learning path on subjects that cover: software engineering, electrochemistry and clay modelling"
+      content="My name is Alex Bujor and this is my personal webpage."
     />
     <meta
       property="twitter:image"
-      content="https://avatars.githubusercontent.com/u/44103446?v=4"
+      content="assets/landing_page.png"
     />
 
     <!-- Link -->
@@ -75,10 +75,10 @@
       href="assets/favicon/android-chrome-512x512.png"
     />
     <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
     <script src="https://kit.fontawesome.com/5d08d787dd.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="glitch.css" />
-    <link rel="stylesheet" href="preloader.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
   </head>
   <body>
     <div class="zero-container" id="zero-container">
@@ -86,23 +86,36 @@
     <div class="circle-gif"></div>
     </div>
     <header id="hero">
+      <!-- Navbar -->
       <nav class="navbar">
         <div class="container">
-          <h1 id="logo" href="#" class="glitch" data-glitch="BUJ0R">
-            BUJ0R
+          <!-- Logo -->
+          <h1 id="logo">
+            <a href="#"
+              ><img src="./assets/site_logo.ico" alt="BUJOR"
+            /></a>
           </h1>
+          <!-- Navbar links -->
           <ul class="nav-menu">
-            <li><a class="nav-link" href="#about">ABOUT</a></li>
             <li><a class="nav-link" href="#projects">PROJECTS</a></li>
-            <li><a class="nav-link" href="#footer">CONTACT</a></li>
+            <li><a class="nav-link" href="#">CONTACT</a></li>
+            <li><a class="nav-link" target="_blank" href="https://blog.bujorul.com">BlOG</a></li>
             <li>
               <a
-                class="nav-link btn btn-primary"
+                class="nav-link btn btn-primary" target="_blank"
                 href="https://drive.google.com/file/d/190eBl0P2JzsAK6hyPUxuMbYjbdATaLA_/view?usp=sharing"
-                target="_blank"
-                >RESUME <i class="fa-solid fa-user-tie user-tie"></i></a>
+                >RESUME <i class="fa-solid fa-user-tie user-tie"></i
+              ></a>
             </li>
 
+            <!-- Toggle switch -->
+            <div class="theme-switch">
+              <input type="checkbox" id="switch" />
+              <label class="toggle-icons" for="switch">
+                <img class="moon" src="assets/moon.svg" />
+                <img class="sun" src="assets/sun.svg" />
+              </label>
+            </div>
             <!-- Hamburger menu -->
           </ul>
           <div class="hamburger">
@@ -112,167 +125,165 @@
           </div>
         </div>
       </nav>
-      <div class="perm-social">
-        <ul class="contact-me">
-            <li><a href="https://www.linkedin.com/in/bjralexandru/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-            <li><a href="https://twitter.com/bjalexandru" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-            <li><a href="https://github.com/bjralexandru" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-            <li><a href="https://www.hackerrank.com/bjalexandru" target="_blank"><i class="fa-brands fa-hackerrank"></i></a></li>
-            <li><a href="#hero"><i class="fa-solid fa-angles-up back-up" alt="Back to Top"></i></a></li>
-        </ul>
-    </div>  
-    <main class="content">
-        
-        <section class="hero" id="hero">
-            <h1>Hello, my name is</h1>
-            <h2>Alexandru Bujor</h2>
-            <p>I'm a chemist and developer</p>
-            <p class="mvp">In my day job I create new materials through organic synthesis, and at night I build my way
-                into
-                software engineering through project based learning.</p>
-            <div class="learn-more">
-                <p><a href="#" class="find-more perm-btn">Learn More</a></p>
-           
-        </section>
-        </div>  
-        <section class="about" id="about">
-            <div class="whois">
-               
-                <h1>root@ubuntu:~ whoami</h1>
-                
-                <p>I’m Alex and my passion for chemistry only became questionable after two years in 
-                  which I’ve spent most of my afternoons learning and working with Python, SQL and Linux.</p>
-                <p>Lately, I discovered the Golang programming language and I’m having lots of fun 
-                  coding with it. Also, I've started dabbling with clay modeling and, while my "talent" 
-                  is not yet suited for the gig economy, it's my new hobby and it brings me mental clarity.</p>
-                <p>​On this webpage, you’ll find my code-related projects and scientific tools/guides 
-                  covering electrochemistry related subjects/experiments.</p>
-                <ul class="job-skills">
-                    <li><i class="fa-brands fa-golang skills-icon"></i> Golang</li>
-                    <li><i class="fa-brands fa-python skills-icon"></i> Python</li>
-                    <li><i class="fa-brands fa-git-alt skills-icon"></i> Git</li>
-                    <li><i class="fa-solid fa-database skills-icon"></i> SQL</li>
-                </ul>
-            </div>
-            <div class="my-image">
-                <div class="profile-video">
-                    <video src="/assets/profile.mp4" class="profile" autoplay="true" loop></video>
-                </div>
-                <div class="circle1"></div>
-            </div>
-        </section>
-        <section class="projects" id="projects">
-            <h1>Projects</h1>
-            <h2>A collection of personal projects</h2>
-            <!-- Copy the code snippet below to add more projects. -->
 
-            <!-- PROJECT-1 -->
-            <div class="project-container">
-                <div class="project-image">
-                  <a href="https://github.com/bjralexandru/SECM-Fitter" target="_blank">
-                    <span class="secm-link"></span>
-                  </a>
-                    <div class="external-links">
-                        <a href="https://github.com/bjralexandru/SECM-Fitter" target="_blank>"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://secmfitter.com" target="_blank"><i class="fa-solid fa-square-arrow-up-right"></i></a>
-                    </div>
-                </div>
-                <div class="project-description">
-                    <h2>SECM Fitter</h2>
-                    <span>A one-stop application for all your Scanning electrochemical microscopy (SECM)
-                      experiments. For now, only the approach curve fitting functionality was implemented.
-                      Further versions will support 3D current maps image analysis. (Pending deployment on Heroku)
-                    </span>
-                    <ul class="tech-stack">
-                        <li><i class="fa-brands fa-python"></i> Python</li>
-                        <li><i class="fa-solid fa-pepper-hot"></i> Flask</li>
-                        <li><i class="fa-solid fa-chart-line"></i> Chart.js</li>
-                        <li><i class="fa-solid fa-flask"></i> SQLAlchemy</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- PROJECT-2 -->
-            <!-- <div class="project-container">
-                <div class="project-image">
-                    <div class="external-links">
-                        <i class="fa-brands fa-github"></i>
-                        <i class="fa-solid fa-square-arrow-up-right"></i>
-                    </div>
-                </div>
-                <div class="project-description">
-                    <h2>Project title</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est nemo suscipit eos soluta
-                        consequatur beatae maxime vero ipsam, corrupti recusandae odio, magnam ratione quis ut aliquam
-                        non quam deserunt eaque!</p>
-                    <ul class="tech-stack">
-                        <li><i class="fa-brands fa-golang"></i> Golang</li>
-                        <li><i class="fa-brands fa-python"></i> Python</li>
-                        <li><i class="fa-brands fa-git-alt"></i> Git</li>
-                        <li><i class="fa-brands fa-docker"></i> Docker</li>
-                    </ul>
-                </div>
-            </div> -->
-            <!-- PROJECT-3 -->
-            <!-- <div class="project-container">
-                <div class="project-image">
-                    <div class="external-links">
-                        <i class="fa-brands fa-github"></i>
-                        <i class="fa-solid fa-square-arrow-up-right"></i>
-                    </div>
-                </div>
-                <div class="project-description">
-                    <h2>Project title</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est nemo suscipit eos soluta
-                        consequatur beatae maxime vero ipsam, corrupti recusandae odio, magnam ratione quis ut aliquam
-                        non quam deserunt eaque!</p>
-                    <ul class="tech-stack">
-                        <li><i class="fa-brands fa-golang"></i> Golang</li>
-                        <li><i class="fa-brands fa-python"></i> Python</li>
-                        <li><i class="fa-brands fa-git-alt"></i> Git</li>
-                        <li><i class="fa-brands fa-docker"></i> Docker</li>
-                    </ul>
-                </div>
-            </div> -->
-        </section>
-        <section class="next-steps">
-            <h1>What am I up to?</h1>
-           
-            <div class="first-of-all">
-                <h2>First of all</h2>
-                <h3>I'm thinking about starting a blog on this site. I want to write about my failed
-                    experiments and what I've learned from them.</h3>
-                <p>Other than that, if you'd like to reach out, don't hesitate to contact me on any of my socials.</p>
-            </div>
-            <div class="say-hi">
-                <p><a href="https://blog.bujorul.com" target="_blank" class="cta">Take a look!</a></p>
-            </div>
-           
-        </section>
-    </main>
-    <script src="main.js"></script>
-</body>
-<footer id="footer">
-    <div class="container-email">
-        <a href="mailto:bjalexandru@gmail.com">bjalexandru@gmail.com</a>
-    </div>
-    <!-- Social links -->
-    <div class="footer-social">
-        <a href="https://www.facebook.com/bujorul/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://twitter.com/bjalexandru" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-        <a href="https://www.linkedin.com/in/bjralexandru/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="https://github.com/bjralexandru" target="_blank"><i class="fa-brands fa-github-alt"></i></a>
-        <a href="https://www.hackerrank.com/bjalexandru" target="_blank"><i class="fa-brands fa-hackerrank"></i></a>
-    </div>
-</footer>
+      <section class="header-container">
+        <video
+          class="profile-image"
+          src="assets/profile.mp4"
+          alt=""
+        autoplay loop></video>
+        <h1>Hi I'm Alex</h1>
 
+        <div class="content-text">
+          <h2>Chemist & Developer</h2>
 
-    <script src="main.js"></script>
-    <script> 
-       var loader = document.getElementById("zero-container")
-       
-       window.addEventListener("load", setTimeout(function(){
-        loader.style.display = "none";
-       }, 2500))
-    </script>
+          <p>
+            In my day job I create new materials through organic synthesis, and at night I build my way 
+            into software engineering through project based learning.
+          </p>
+        </div>
+        <a
+          href="https://github.com/bjralexandru"
+          class="btn btn-secondary"
+          target="_blank"
+          >Connect With Me</a
+        >
+      </section>
+    </header>
+
+    <!-- Projects -->
+    <section id="projects" class="project-container container">
+      <div class="division"></div>
+      <div class="content-text">
+        <h2>Works</h2>
+        <p>Check out some of my personal projects</p>
+      </div>
+
+      <article class="project">
+        <!-- Project 1 -->
+        <div href="https://github.com/bjralexandru/SECM-Fitter" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>SECM Fitter</h3>
+              <p>Flask, Python, Chart.js</p>
+            </div>
+
+            <div class="project-link">
+              <a href="https://github.com/bjralexandru/SECM-Fitter" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div href="https://github.com/bjralexandru/aqi_sftp_bgq_automation" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Automated SFTP</h3>
+              <p>Python, Windows, MacOS, BigQuery</p>
+            </div>
+
+            <div class="project-link">
+              <a href="https://github.com/bjralexandru/aqi_sftp_bgq_automation" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Porject 3 -->
+        <div href="https://github.com/bjralexandru/JSON_Decoder_Go" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Golang API</h3>
+              <p>Golang</p>
+            </div>
+
+            <div class="project-link">
+              <a href="https://github.com/bjralexandru/JSON_Decoder_Go" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <!-- <div href="" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Project Four</h3>
+              <p>React, Redux, SASS</p>
+            </div>
+
+            <div class="project-link">
+              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- Project 5 -->
+        <!-- <div href="" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Project Five</h3>
+              <p>React, Redux, SASS</p>
+            </div>
+
+            <div class="project-link">
+              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- Project 6 -->
+        <!-- <div href="" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Project Six</h3>
+              <p>React, Redux, SASS</p>
+            </div>
+
+            <div class="project-link">
+              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div> -->
+      </article>
+
+      <a href="#" class="btn btn-secondary"
+          >See More <i class="fas fa-arrow-right"></i
+      ></a>
+    </section>
+
+    <footer id="footer">
+      <div class="container">
+        <a href="mailto:communitypro47@gmail.com">bjalexandru@gmail.com</a>
+        <!-- Social links -->
+        <div class="social">
+          <a href="https://twitter.com/bjalexandru" target="_blank"><img src="./assets/twitter-icon.svg" alt="Twitter" /></a>
+          <a href="https://www.linkedin.com/in/bjralexandru/" target="_blank"
+            ><img src="./assets/linkedin-icon.svg" alt="Linkedin"
+          /></a>
+          <a href="https://github.com/bjralexandru" target="_blank"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
+         <a href="https://www.hackerrank.com/bjalexandru" target="_blank"><i class="fa-brands fa-hackerrank"></i></a>
+        </div>
+        <!-- Attribution -->
+        <div class="attribution">
+          <a
+            href="https://github.com/CommunityPro/portfolio-html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://user-images.githubusercontent.com/62628408/157202263-9174da24-b19a-4017-9b7c-a1d26ae8f014.svg"
+              alt="attribution"
+              width="150px"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
