@@ -61,7 +61,13 @@ if (currentTheme) {
 
 //Adding date
 
-let myDate = document.querySelector("#datee");
+let myDate = document.querySelector("#date");
 
 const yes = new Date().getFullYear();
 myDate.innerHTML = yes;
+
+
+// Project cards click-able
+document.getElementById("project1").onclick = function() {
+    window.location.href = "https://github.com/bjralexandru/SECM-Fitter";
+}
