@@ -140,8 +140,8 @@ h2::selection {
 }
 
 /* Project 2 */
-.card:nth-child(4) {
-  background: url(../assets/project/project-four.png) center center/cover;
+.card:nth-child(2) {
+  background: url(../assets/project/project-two.png) center center/cover;
 }
 
 /* Project 3 */
@@ -150,8 +150,8 @@ h2::selection {
 }
 
 /* Project 4 */
-.card:nth-child(2) {
-  background: url(../assets/project/project-two.png) center center/cover;
+.card:nth-child(4) {
+  background: url(../assets/project/project-four.png) center center/cover;
 }
 
 /* Project 5 */
